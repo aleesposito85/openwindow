@@ -1,0 +1,10 @@
+{
+  "name": "home-1800x1500-2bay",
+  "opening_w": 1800,
+  "opening_h": 1500,
+  "fix_gap": 8,
+  "awning_h": 450,
+  "glazing": "igu",
+  "tier": 3,
+  "max_pane": [1200, 900]
+}

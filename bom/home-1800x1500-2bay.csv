@@ -1,0 +1,38 @@
+group,item,qty,unit
+Fixings,"Timber screw 10g x 75, stainless or galvanised (frame fixings)",44,pcs
+Fixings,"Self-tapping screw 8g x 30 stainless, countersunk (aluminium tube screws: frame, sash, corners, nodes)",76,pcs
+Fixings,"Tek screw 8g x 25, 410 stainless, countersunk (steel transom and mullion tubes: T, TE, TX, ML, MU, shoes)",21,pcs
+Fixings,"Self-tapping screw 8g x 12 stainless, countersunk (screen tube screws)",40,pcs
+Fixings,M4 heat-set insert for a 5.6 x 8 mm hole,46,pcs
+Fixings,"M4 x 10 countersunk machine screw (cam bases CMB, keepers KP)",16,pcs
+Fixings,M4 x 10 pan or button head machine screw (hinge frame leaves HG),8,pcs
+Fixings,M4 x 8 pan screw + 20 mm penny washer (cam pivots),4,pcs
+Fixings,M4 x 16 countersunk machine screw (transom and mullion lock screws),12,pcs
+Fixings,M4 x 50 bolt + nyloc nut (hinge pins),4,pcs
+Fixings,4g x 12 self-tapping screw (screen leaves HS),8,pcs
+Fixings,"Plastic window packers, assorted 1-10 mm (one stack per position)",53,pcs
+Hardware,"Stainless friction stay pair, 400 mm, stack <= 13 mm, track/arm width <= 14 mm (check rating >= 7.6 kg)",2,pair
+Hardware,"Friction-stay screw 8g x 25 stainless, countersunk (tracks to upper jambs; match the stay's holes)",8,pcs
+Hardware,"Tek screw 8g x 16, 410 stainless, countersunk (friction-stay tracks to upper mullions; match the stay's holes)",8,pcs
+Hardware,"Friction-stay screw 8g x 16 stainless, countersunk (arms to sash sides; match the stay's holes)",12,pcs
+Seals,"EPDM bulb kerf seal, 3 mm kerf (outer + inner loop round each sash opening)",10.67,m
+Seals,"EPDM glazing wedge gasket, 3 mm",22.66,m
+Seals,"Closed-cell foam cord, 4 mm (one ring per segment joint)",14.9,m
+Seals,"Closed-cell foam cord, 3 mm (transom and mullion shoe seams)",0.42,m
+Seals,"MS-polymer sealant rated for +/-50% joint movement (ASTM C920 Class 50 or equal), 290 ml cartridge (joints, fixing bedding, outside perimeter)",4,pcs
+Seals,"Butyl flashing tape, 150 mm wide (sill tray; or two 100 mm runs lapped 50 mm)",2.08,m
+Seals,"Backer rod, 10 mm",6.54,m
+Seals,"Low-expansion window foam, can",1,pcs
+Seals,Gel CA glue (EPDM loop joints),1,pcs
+Screen,"Flexible magnetic strip A, 12.7 mm, adhesive-backed (screen back channel)",5.58,m
+Screen,"Flexible magnetic strip B, 12.7 mm, adhesive-backed, matched to A, or adhesive steel strip (frame magnet channel)",5.58,m
+Screen,Fibreglass insect mesh,1.02,m2
+Screen,"Screen spline, 4 mm",5.58,m
+Screen,"Two-part epoxy, 5-minute (screen corner joints)",1,pcs
+Tube,Tube alu10 (total length; buy in 1 m/3 m stock),5.27,m
+Tube,Tube alu20 (total length; buy in 1 m/3 m stock),10.86,m
+Tube,Tube steel40x20 (total length; buy in 1 m/3 m stock),3.05,m
+Glazing,"IGU 4/16/4 = 24 mm, toughened if required by AS 1288, low-E/argon optional, 829 x 878 (fixed pane)",2,pcs
+Glazing,"IGU 4/16/4 = 24 mm, toughened if required by AS 1288, low-E/argon optional, 737 x 388 (sash pane)",2,pcs
+Filament,PETG (interior),4.75,kg
+Filament,"ASA-CF or PC-ABS (light colour) (exterior, tier 3)",19.06,kg

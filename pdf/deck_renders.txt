@@ -1,0 +1,78 @@
+# Guide-deck and README illustrations: PARAMS|view (relative to cad/)|output|openscad args. Render with python3 pdf/render_deck.py.
+home-1800x1500|deck/hero.scad|docs/img/deck/hero.png|--camera=0,0,0,80,0,32,6000 --viewall --autocenter
+home-1800x1500|deck/inside.scad|docs/img/deck/inside.png|--camera=0,0,0,78,0,205,6000 --viewall --autocenter
+home-1800x1500|deck/inside.scad|docs/img/deck/inside-open.png|-D open=1 --camera=0,0,0,74,0,218,6000 --viewall --autocenter
+home-1800x1500|deck/section.scad|docs/img/deck/section-0.png|-D zone=0 --camera=0,0,0,0,0,0,410 --projection=ortho
+home-1800x1500|deck/section.scad|docs/img/deck/section-1.png|-D zone=1 --camera=0,0,0,0,0,0,410 --projection=ortho
+home-1800x1500|deck/section.scad|docs/img/deck/section-2.png|-D zone=2 --camera=0,0,0,0,0,0,410 --projection=ortho
+home-1800x1500|deck/section.scad|docs/img/deck/section-3.png|-D zone=3 --camera=0,0,0,0,0,0,410 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-0.png|-D k=0 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-1.png|-D k=1 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-2.png|-D k=2 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-3.png|-D k=3 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-4.png|-D k=4 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-5.png|-D k=5 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-6.png|-D k=6 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/profiles.scad|docs/img/deck/profile-7.png|-D k=7 --camera=0,0,0,0,0,0,210 --projection=ortho
+home-1800x1500|deck/buildup.scad|docs/img/deck/build-1.png|-D step=1 --camera=0,0,0,48,0,200,8000 --viewall --autocenter
+home-1800x1500|deck/buildup.scad|docs/img/deck/build-2.png|-D step=2 --camera=0,0,0,48,0,200,8000 --viewall --autocenter
+home-1800x1500|deck/buildup.scad|docs/img/deck/build-3.png|-D step=3 --camera=0,0,0,48,0,200,8000 --viewall --autocenter
+home-1800x1500|deck/buildup.scad|docs/img/deck/build-4.png|-D step=4 --camera=0,0,0,48,0,200,8000 --viewall --autocenter
+home-1800x1500|deck/buildup.scad|docs/img/deck/build-5.png|-D step=5 --camera=0,0,0,48,0,200,8000 --viewall --autocenter
+home-1800x1500|deck/buildup.scad|docs/img/deck/build-6.png|-D step=6 --camera=0,0,0,48,0,200,8000 --viewall --autocenter
+home-1800x1500|deck/joint.scad|docs/img/deck/joint.png|--camera=0,0,0,68,0,212,800 --viewall --autocenter
+home-1800x1500|deck/corner.scad|docs/img/deck/corner.png|--camera=0,0,0,62,0,205,800 --viewall --autocenter
+home-1800x1500|deck/node.scad|docs/img/deck/node.png|--camera=0,0,0,62,0,222,800 --viewall --autocenter
+home-1800x1500|deck/sill_detail.scad|docs/img/deck/sill-detail.png|--camera=0,0,0,72,0,28,800 --viewall --autocenter
+home-1800x1500|deck/hinge.scad|docs/img/deck/hinge.png|--camera=0,0,0,62,0,205,800 --viewall --autocenter
+home-1800x1500|generated/parts/H.scad|docs/img/deck/part-H.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/S.scad|docs/img/deck/part-S.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/SW.scad|docs/img/deck/part-SW.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/JL.scad|docs/img/deck/part-JL.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/JU.scad|docs/img/deck/part-JU.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/T.scad|docs/img/deck/part-T.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/TE.scad|docs/img/deck/part-TE.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/SH.scad|docs/img/deck/part-SH.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/SB.scad|docs/img/deck/part-SB.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/SBE.scad|docs/img/deck/part-SBE.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/SV.scad|docs/img/deck/part-SV.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/NH.scad|docs/img/deck/part-NH.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/NV.scad|docs/img/deck/part-NV.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/NS.scad|docs/img/deck/part-NS.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/BFH.scad|docs/img/deck/part-BFH.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/BFV.scad|docs/img/deck/part-BFV.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/BSH.scad|docs/img/deck/part-BSH.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/BSV.scad|docs/img/deck/part-BSV.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/GW.scad|docs/img/deck/part-GW.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/GF.scad|docs/img/deck/part-GF.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/WC.scad|docs/img/deck/part-WC.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/TC.scad|docs/img/deck/part-TC.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+home-1800x1500|generated/parts/CH.scad|docs/img/deck/part-CH.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/CSL.scad|docs/img/deck/part-CSL.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/CSR.scad|docs/img/deck/part-CSR.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/CS.scad|docs/img/deck/part-CS.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/CN.scad|docs/img/deck/part-CN.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/JN.scad|docs/img/deck/part-JN.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/TSL.scad|docs/img/deck/part-TSL.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/TSR.scad|docs/img/deck/part-TSR.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/CMB.scad|docs/img/deck/part-CMB.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/CMH.scad|docs/img/deck/part-CMH.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/KP.scad|docs/img/deck/part-KP.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/HG.scad|docs/img/deck/part-HG.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|generated/parts/HS.scad|docs/img/deck/part-HS.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+bench-600|generated/parts/AFH.scad|docs/img/deck/part-AFH.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+bench-600|generated/parts/AFV.scad|docs/img/deck/part-AFV.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+bench-600|generated/parts/ASH.scad|docs/img/deck/part-ASH.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+bench-600|generated/parts/ASV.scad|docs/img/deck/part-ASV.png|--camera=0,0,0,24,-53,180,500 --viewall --autocenter
+bench-600|generated/parts/AC.scad|docs/img/deck/part-AC.png|--camera=0,0,0,55,0,25,500 --viewall --autocenter
+home-1800x1500|deck/units.scad|docs/img/deck/unit-0.png|-D u=0 --camera=0,0,0,72,0,205,8000 --viewall --autocenter
+home-1800x1500|deck/units.scad|docs/img/deck/unit-1.png|-D u=1 --camera=0,0,0,62,0,190,8000 --viewall --autocenter
+home-1800x1500|deck/units.scad|docs/img/deck/unit-2.png|-D u=2 --camera=0,0,0,66,0,198,8000 --viewall --autocenter
+home-1800x1500|deck/units.scad|docs/img/deck/unit-3.png|-D u=3 --camera=0,0,0,66,0,198,8000 --viewall --autocenter
+home-1800x1500|deck/units.scad|docs/img/deck/unit-4.png|-D u=4 --camera=0,0,0,72,0,205,8000 --viewall --autocenter
+home-1800x1500|generated/parts/H.scad|docs/img/deck/print-H.png|--camera=0,0,0,62,0,32,500 --viewall --autocenter
+bench-600|deck/hero.scad|docs/img/deck/hero-bench.png|--camera=0,0,0,78,0,32,3000 --viewall --autocenter
+bench-600|tests/lock_view.scad|docs/img/lock_view.png|--camera=0,0,0,65,0,210,350 --viewall --autocenter
+bench-600|tests/profiles_sheet.scad|docs/img/profiles.png|--camera=0,0,0,0,0,0,500 --viewall --autocenter --projection=ortho
+home-1800x1500|assembly.scad|docs/img/assembly-home.png|--camera=0,0,0,70,0,200,0 --viewall --autocenter
+home-1800x1500-2bay|assembly.scad|docs/img/assembly-home-2bay.png|--camera=0,0,0,70,0,200,0 --viewall --autocenter

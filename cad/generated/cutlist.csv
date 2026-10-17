@@ -1,0 +1,8 @@
+member,core,length_mm,qty
+head,alu20,521.0,1
+sill,alu20,521.0,1
+jamb,alu20,521.0,2
+transom,steel40x20,496.0,1
+sash_horizontal,alu20,415.0,2
+sash_vertical,alu20,147.0,2
+screen_horizontal,alu10,485.0,2

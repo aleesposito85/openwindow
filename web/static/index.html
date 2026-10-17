@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenWindow configurator</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header>
+  <h1>OpenWindow <span>configurator</span></h1>
+  <div id="box" class="pill">Render engine: checking</div>
+</header>
+<div id="offline" class="banner" role="alert" hidden></div>
+<main>
+  <form id="form" autocomplete="off" novalidate>
+    <fieldset>
+      <legend>Window</legend>
+      <label class="field">Name<input name="name" spellcheck="false"><small class="err" data-for="name"></small></label>
+      <div class="pair">
+        <label class="field">Opening width <em>mm</em><input name="opening_w" type="number" step="1"><small class="err" data-for="opening_w"></small></label>
+        <label class="field">Opening height <em>mm</em><input name="opening_h" type="number" step="1"><small class="err" data-for="opening_h"></small></label>
+      </div>
+      <div class="pair">
+        <label class="field">Fixing gap <em>mm, 6-10</em><input name="fix_gap" type="number" step="0.5"><small class="err" data-for="fix_gap"></small></label>
+        <label class="field">Awning height <em>mm</em><input name="awning_h" type="number" step="1"><small class="err" data-for="awning_h"></small></label>
+      </div>
+      <label class="field">Glazing
+        <select name="glazing">
+          <option value="igu">IGU 4/16/4 double glazing</option>
+          <option value="acrylic">Acrylic sandwich (2 panels + air gap)</option>
+          <option value="twinwall">Twin-wall polycarbonate 16 mm</option>
+        </select>
+        <small class="err" data-for="glazing"></small>
+      </label>
+      <div class="pair hidden" id="sandwich">
+        <label class="field">Panel thickness <em>mm, 2-6</em><input name="acrylic_t" type="number" step="0.5" min="2" max="6"><small class="err" data-for="acrylic_t"></small></label>
+        <label class="field">Air gap <em>mm, 8-16</em><input name="acrylic_gap" type="number" step="1" min="8" max="16"><small class="err" data-for="acrylic_gap"></small></label>
+      </div>
+      <label class="field">Material tier
+        <select name="tier">
+          <option value="1">1: shaded, light colour</option>
+          <option value="2">2: part sun, light colour</option>
+          <option value="3">3: full sun, or any dark colour</option>
+        </select>
+        <small class="err" data-for="tier"></small>
+      </label>
+      <label class="check"><input name="screen" type="checkbox"> Insect screen</label>
+    </fieldset>
+    <fieldset>
+      <legend>Tube cores</legend>
+      <label class="field">Core
+        <select name="core">
+          <option value="">Standard tubes (20x20 aluminium, 40x20 steel transom)</option>
+          <option value="vslot">V-slot 2020 (T-nuts)</option>
+        </select>
+        <small class="err" data-for="core"></small>
+      </label>
+      <div class="hidden" id="vslot">
+        <label class="field">V-slot piece length <em>mm, 300-6000</em><input name="vslot_stock" type="number" step="1" min="300" max="6000"><small class="err" data-for="vslot_stock"></small></label>
+        <p class="note" id="core-note"></p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Glass sheet and bays</legend>
+      <div class="pair">
+        <label class="field">Max pane <em>mm</em><input name="max_a" type="number" step="1"></label>
+        <label class="field">by <em>mm</em><input name="max_b" type="number" step="1"></label>
+      </div>
+      <label class="check"><input name="max_none" type="checkbox"> No limit</label>
+      <small class="err" data-for="max_pane"></small>
+      <label class="field">Bays <em>empty for automatic</em><input name="bays" type="number" step="1" min="1"><small class="err" data-for="bays"></small></label>
+      <p class="note" id="bays-note"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Printer</legend>
+      <label class="field">Bed<select name="preset"></select></label>
+      <div class="triple" id="custom-bed">
+        <label class="field">X <em>mm</em><input name="bed_x" type="number" step="1"></label>
+        <label class="field">Y <em>mm</em><input name="bed_y" type="number" step="1"></label>
+        <label class="field">Z <em>mm</em><input name="bed_z" type="number" step="1"></label>
+      </div>
+      <small class="err" data-for="bed"></small>
+      <p class="note" id="maxseg"></p>
+    </fieldset>
+    <small class="err" data-for="_form"></small>
+    <fieldset>
+      <legend>Render STLs</legend>
+      <div class="buttons">
+        <button type="button" id="render-all">Render all</button>
+        <button type="button" id="render-sel">Render selected</button>
+        <button type="button" id="cancel" class="secondary">Cancel</button>
+        <button type="button" id="copy-link" class="secondary">Copy link</button>
+      </div>
+      <div class="progress"><div id="bar"></div></div>
+      <p class="note" id="job-text">No render in this session.</p>
+      <p id="downloads"></p>
+      <p><a href="/guide.pdf" target="_blank" rel="noopener">OpenWindow-Guide.pdf</a>
+         <span class="note">— the whole job as a slide deck: sizing, printing, bench assembly, installation, owner's manual, tests.</span></p>
+    </fieldset>
+  </form>
+  <section class="panel" id="drawing-panel">
+    <h2>Front view <span>from outside, mm</span></h2>
+    <div id="drawing"></div>
+    <div id="badges"></div>
+    <p class="note" id="weight-note"></p>
+    <div id="explain"></div>
+  </section>
+  <section class="panel" id="viewer-panel">
+    <h2><span id="viewer-title">Viewer</span><button type="button" id="assembled" class="small">Assembled</button></h2>
+    <canvas id="viewer"></canvas>
+    <p class="note" id="viewer-note">Click a part row to view its STL. Drag to orbit, scroll to zoom.</p>
+  </section>
+  <section class="panel" id="parts-panel">
+    <h2>Parts <span id="parts-sum"></span></h2>
+    <table id="parts">
+      <thead><tr><th><input type="checkbox" id="select-all" title="Select all"></th><th>ID</th><th>Part</th><th class="n">Qty</th><th class="n">Length</th><th>Side</th><th>State</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <pre id="log"></pre>
+  </section>
+</main>
+</body>
+</html>

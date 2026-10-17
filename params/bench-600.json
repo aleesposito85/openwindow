@@ -1,0 +1,9 @@
+{
+  "name": "bench-600",
+  "opening_w": 600,
+  "opening_h": 600,
+  "fix_gap": 8,
+  "awning_h": 200,
+  "glazing": "acrylic",
+  "tier": 1
+}

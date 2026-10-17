@@ -1,0 +1,14 @@
+{
+  "name": "my-window",
+  "opening_w": 1800,
+  "opening_h": 1500,
+  "fix_gap": 8,
+  "awning_h": 450,
+  "glazing": "acrylic",
+  "tier": 1,
+  "screen": true,
+  "bed": [256, 256, 256],
+  "max_pane": [1200, 900],
+  "acrylic_t": 3,
+  "core": "vslot"
+}

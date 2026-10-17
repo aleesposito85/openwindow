@@ -1,0 +1,14 @@
+member,core,length_mm,qty
+head 1/2,vslot2020,946.1,1
+head 2/2,vslot2020,774.9,1
+sill 1/2,vslot2020,946.1,1
+sill 2/2,vslot2020,774.9,1
+jamb_lower,vslot2020,943.0,2
+jamb_upper,vslot2020,475.0,2
+transom,steel40x20,1696.0,1
+mullion_lower,vslot2020,876.0,2
+mullion_upper,vslot2020,478.0,2
+sash_horizontal,vslot2020,746.0,4
+sash_vertical,vslot2020,397.0,4
+screen_horizontal,alu10,816.0,4
+screen_vertical,alu10,501.0,4

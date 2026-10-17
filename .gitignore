@@ -1,0 +1,10 @@
+# Estate-local ops notes (deployment runbook) - not part of the published project
+OPS.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Runtime lock + OS cruft
+.generate.lock
+.DS_Store

@@ -1,0 +1,63 @@
+# BOM: bench-600
+
+Prints: 98 parts in 37 types (list: `bom/bench-600-parts.csv`).
+
+| Group | Item | Qty | Unit |
+|---|---|---|---|
+| Fixings | Timber screw 10g x 75, stainless or galvanised (frame fixings) | 20 | pcs |
+| Fixings | Self-tapping screw 8g x 30 stainless, countersunk (aluminium tube screws: frame, sash, corners, nodes) | 32 | pcs |
+| Fixings | Tek screw 8g x 25, 410 stainless, countersunk (steel transom tube: T, TE, shoes) | 4 | pcs |
+| Fixings | Self-tapping screw 8g x 12 stainless, countersunk (screen tube screws) | 8 | pcs |
+| Fixings | M4 heat-set insert for a 5.6 x 8 mm hole | 20 | pcs |
+| Fixings | M4 x 10 countersunk machine screw (cam bases CMB, keepers KP) | 8 | pcs |
+| Fixings | M4 x 10 pan or button head machine screw (hinge frame leaves HG) | 4 | pcs |
+| Fixings | M4 x 8 pan screw + 20 mm penny washer (cam pivots) | 2 | pcs |
+| Fixings | M4 x 16 countersunk machine screw (transom lock screws) | 4 | pcs |
+| Fixings | M4 x 50 bolt + nyloc nut (hinge pins) | 2 | pcs |
+| Fixings | 4g x 12 self-tapping screw (screen leaves HS) | 4 | pcs |
+| Fixings | Plastic window packers, assorted 1-10 mm (one stack per position) | 26 | pcs |
+| Hardware | Stainless friction stay pair, 200 mm, stack <= 13 mm, track/arm width <= 14 mm (check rating >= 1.6 kg) | 1 | pair |
+| Hardware | Friction-stay screw 8g x 25 stainless, countersunk (tracks to upper jambs; match the stay's holes) | 8 | pcs |
+| Hardware | Friction-stay screw 8g x 16 stainless, countersunk (arms to sash sides; match the stay's holes) | 6 | pcs |
+| Seals | EPDM bulb kerf seal, 3 mm kerf (outer + inner loop round the sash opening) | 2.94 | m |
+| Seals | EPDM glazing wedge gasket, 3 mm | 5.08 | m |
+| Seals | Closed-cell foam cord, 4 mm (one ring per segment joint) | 4.9 | m |
+| Seals | Closed-cell foam cord, 3 mm (transom shoe seams) | 0.14 | m |
+| Seals | MS-polymer sealant rated for +/-50% joint movement (ASTM C920 Class 50 or equal), 290 ml cartridge (joints, fixing bedding, outside perimeter) | 2 | pcs |
+| Seals | Butyl flashing tape, 150 mm wide (sill tray; or two 100 mm runs lapped 50 mm) | 0.88 | m |
+| Seals | Backer rod, 10 mm | 2.34 | m |
+| Seals | Low-expansion window foam, can | 1 | pcs |
+| Seals | Gel CA glue (EPDM loop joints) | 1 | pcs |
+| Screen | Flexible magnetic strip A, 12.7 mm, adhesive-backed (screen back channel) | 1.63 | m |
+| Screen | Flexible magnetic strip B, 12.7 mm, adhesive-backed, matched to A, or adhesive steel strip (frame magnet channel) | 1.63 | m |
+| Screen | Fibreglass insect mesh | 0.17 | m2 |
+| Screen | Screen spline, 4 mm | 1.63 | m |
+| Screen | Two-part epoxy, 5-minute (screen corner joints) | 1 | pcs |
+| Tube | Tube alu10 (total length; buy in 1 m/3 m stock) | 0.97 | m |
+| Tube | Tube alu20 (total length; buy in 1 m/3 m stock) | 3.21 | m |
+| Tube | Tube steel40x20 (total length; buy in 1 m/3 m stock) | 0.5 | m |
+| Glazing | Acrylic 4 mm, 498 x 228 (fixed pane) | 2 | pcs |
+| Glazing | Acrylic 4 mm, 406 x 138 (sash pane) | 2 | pcs |
+| Glazing | Silica gel desiccant beads | 100 | g |
+| Glazing | Butyl glazing tape, 3 mm (acrylic sandwich edge) | 5.08 | m |
+| Filament | PETG (interior) | 1.25 | kg |
+| Filament | PETG + exterior paint, or ASA (exterior, tier 1) | 6.19 | kg |
+
+## Tube cut list (`bom/bench-600-cutlist.csv`)
+
+| Member | Core | Length (mm) | Qty |
+|---|---|---|---|
+| head | alu20 | 521.0 | 1 |
+| sill | alu20 | 521.0 | 1 |
+| jamb | alu20 | 521.0 | 2 |
+| transom | steel40x20 | 496.0 | 1 |
+| sash_horizontal | alu20 | 415.0 | 2 |
+| sash_vertical | alu20 | 147.0 | 2 |
+| screen_horizontal | alu10 | 485.0 | 2 |
+
+## Glass (`bom/bench-600-glass.csv`)
+
+| Pane | Glazing | Width (mm) | Height (mm) | Qty |
+|---|---|---|---|---|
+| fixed | acrylic | 498 | 228 | 1 |
+| sash | acrylic | 406 | 138 | 1 |
